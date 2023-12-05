@@ -5,7 +5,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-PATH_TO_DATA = Path().cwd().parent / "datasets" / "final_dataset.csv"
+PATH_TO_DATA = Path().cwd() / "datasets" / "final_dataset.csv"
 
 
 # Графики распределений признаков
