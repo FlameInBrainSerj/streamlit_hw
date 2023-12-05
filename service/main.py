@@ -149,13 +149,12 @@ def load_page():
 
     df = pd.read_csv(PATH_TO_DATA).drop(["AGREEMENT_RK"], axis=1)
     st.title("EDA данных о клиентах банка")
+    st.button("Donate, if you liked this <3", on_click=lambda: st.success('Спасибо, теперь все ваши деньги - мои :)'))
     plot_dists(df)
     plot_pairplot(df)
     plot_corr_matrix(df)
     plot_dependencies(df)
     plot_descr_stat(df)
-    st.button("Donate <3")
-
 
 if __name__ == "__main__":
     load_page()
