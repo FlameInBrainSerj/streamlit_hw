@@ -156,5 +156,6 @@ def load_page():
     plot_dependencies(df)
     plot_descr_stat(df)
 
+
 if __name__ == "__main__":
     load_page()
